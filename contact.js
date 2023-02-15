@@ -125,46 +125,192 @@ document.querySelector("#page-header").append(h2,p);
 /*section page header end*/
 
 
-/*section contact start*/
+/*section contact form start*/
 var section3=document.createElement("section");
     section3.setAttribute("id","contact-detail");
     section3.setAttribute("class","section-p1");
     document.querySelector("#Parent-section").append(section3);
+     
+var div=document.createElement("div");
+    div.setAttribute("class","details")
+    document.querySelector("#contact-detail").append(div);
+
+var span=document.createElement("span");
+  span.innerText="GET IN TOUCH";  
+  
+var h2=document.createElement("h2");
+    h2.innerText="Visit one of our agency locations or contact us today";  
+
+var h3=document.createElement("h3");
+    h3.innerText="Head Office";
+    
+document.querySelector(".details").append(span,h2,h3);
+
+     
+var div=document.createElement("div");
+    div.setAttribute("class","icons")
+    document.querySelector(".details").append(div);
+
+var li1=document.createElement("li");
+    li1.setAttribute("class","li1")
+    document.querySelector(".icons").append(li1);
+
+var i1=document.createElement("i");
+    i1.setAttribute("class","fa-solid fa-map");
+    var p1=document.createElement("p");
+        p1.innerText="56 Glassford Street Glasgow G1 1IUL New York";
+document.querySelector(".li1").append(i1,p1);
+ 
+var li2=document.createElement("li");
+    li2.setAttribute("class","li2")
+    document.querySelector(".icons").append(li2);
+
+var i2=document.createElement("i");
+    i2.setAttribute("class","far fa-envelope");
+var p2=document.createElement("p");
+    p2.innerText="contact@example.com";
+    document.querySelector(".li2").append(i2,p2);
 
 
+var li3=document.createElement("li");
+    li3.setAttribute("class","li3")
+    document.querySelector(".icons").append(li3);
 
+var i3=document.createElement("i");
+    i3.setAttribute("class","fa-solid fa-phone");
+var p3=document.createElement("p");
+    p3.innerText="contact@example.com";
+    document.querySelector(".li3").append(i3,p3);
 
-/*<section id="contact-detail" class="section-p1" >
-            <div class="details">
-                <span>GET IN TOUCH</span>
-                <h2>Visit one of our agency locations or contact us today</h2>
-                <h3>Head Office</h3>
-               <div class="">
-                <li>
-                    <i class="fa-solid fa-map"></i>
-                    <p>56 Glassford Street Glasgow G1 1IUL New York</p>
-                </li>
-                <li>
-                    <i class="far fa-envelope"></i>
-                    <p>contact@example.com</p>
-                </li>
+var li4=document.createElement("li");
+    li4.setAttribute("class","li4")
+    document.querySelector(".icons").append(li4);
 
-                <li>
-                    <i class="fa-solid fa-phone"></i>
-                    <p>contact@example.com</p>
-                </li>
+var i4=document.createElement("i");
+    i4.setAttribute("class","fa-regular fa-clock");
+var p4=document.createElement("p");
+    p4.innerText="Monday to satarday: 9:00 AM to 16:00PM";
+    document.querySelector(".li4").append(i4,p4);
 
-                <li>
-                    <i class="fa-regular fa-clock"></i>
-                    <p>Monday to satarday: 9:00 AM to 16:00PM</p>
-                </li>
+var div=document.createElement("div");
+    div.setAttribute("class","map")
+    document.querySelector("#contact-detail").append(div);
 
-               </div>
+var iframe=document.createElement("iframe");
+    iframe.setAttribute("src","https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3556.2666481903893!2d80.99704241497119!3d26.95845398310798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399957d74f586c77%3A0x4b4082bb8f3bef03!2sIntegral%20University!5e0!3m2!1sen!2sin!4v1674102862560!5m2!1sen!2sin")
+    document.querySelector(".map").append(iframe);
+
+    /*section form details*/
+
+var section4=document.createElement("section");
+    section4.setAttribute("id","form-details");
+    document.querySelector("#Parent-section").append(section4);
+
+var form=document.createElement("form");
+    form.setAttribute("action"," ");
+    form.setAttribute("id","form");
+    document.querySelector("#form-details").append(form);
+
+var span=document.createElement("span");
+    span.innerText="Leave a Message";
+
+var h2=document.createElement("h2");
+    h2.innerText="We love to hear from you";
+
+var input1=document.createElement("input");
+        input1.setAttribute("type","text");
+        input1.setAttribute("placeholder","Your Name");
+
+var input2=document.createElement("input");
+        input2.setAttribute("type","text");
+        input2.setAttribute("placeholder","E-mail");
+
+var input3=document.createElement("input");
+        input3.setAttribute("type","text");
+        input3.setAttribute("placeholder","Subject");
+
+var textarea=document.createElement("textarea");
+    textarea.setAttribute("placeholder","Your Message");
+    textarea.setAttribute("rows","10");
+    textarea.setAttribute("cols","30");
+
+    
+var btn=document.createElement("button");
+   btn.setAttribute("class","normal");
+    btn.innerText="Submit";
+
+    document.querySelector("#form").append(span,h2,input1,input2,input3,textarea,btn);
+ 
+     /*section form details end*/
+     
+      /*section form people*/
+
+var  div=document.createElement("div");
+      div.setAttribute("class","people")
+      document.querySelector("#form-details").append(div); 
+
+var  div=document.createElement("div");
+     div.setAttribute("class","div-people")
+     document.querySelector(".people").append(div); 
+
+var img1=document.createElement("img");
+    img1.setAttribute("src","img/people/1.png");
+    document.querySelector(".div-people").append(img1); 
+
+var p1=document.createElement("p");
+    p1.setAttribute("id","para"); 
+    p1.innerHTML="<span>John Doe</span>Senior Marketing Manager <br> phone: +000 123 000 77 88 <br> Email: contact@example.com"
+    document.querySelector(".div-people").append(p1);  
+  
+    
+var  div1=document.createElement("div");
+     div1.setAttribute("class","div-people1")
+     document.querySelector(".people").append(div1); 
+
+var img1=document.createElement("img");
+    img1.setAttribute("src","img/people/2.png");
+    document.querySelector(".div-people1").append(img1); 
+
+var p1=document.createElement("p");
+    p1.setAttribute("id","para"); 
+    p1.innerHTML="<span>John Doe</span>Senior Marketing Manager <br> phone: +000 123 000 77 88 <br> Email: contact@example.com"
+    document.querySelector(".div-people1").append(p1);  
+ 
+        
+var  div2=document.createElement("div");
+     div2.setAttribute("class","div-people2")
+     document.querySelector(".people").append(div2); 
+
+var img1=document.createElement("img");
+img1.setAttribute("src","img/people/3.png");
+document.querySelector(".div-people2").append(img1); 
+
+var p1=document.createElement("p");
+p1.setAttribute("id","para"); 
+p1.innerHTML="<span>John Doe</span>Senior Marketing Manager <br> phone: +000 123 000 77 88 <br> Email: contact@example.com"
+document.querySelector(".div-people2").append(p1);  
+    
+
+/*
+  <section id="form-details">
+           
+
+        <div class="people">
+            <div>
+                <img src="img/people/1.png" alt="">
+                <p><span>John Doe</span>Senior Marketing Manager <br> phone: +000 123 000 77 88 <br> Email: contact@example.com</p>
             </div>
-            <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3556.2666481903893!2d80.99704241497119!3d26.95845398310798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399957d74f586c77%3A0x4b4082bb8f3bef03!2sIntegral%20University!5e0!3m2!1sen!2sin!4v1674102862560!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div>
+                <img src="img/people/2.png" alt="">
+                <p><span>John Doe</span>Senior Marketing Manager <br> phone: +000 123 000 77 88 <br> Email: contact@example.com</p>
             </div>
-    </section> 
+            <div>
+                <img src="img/people/3.png" alt="">
+                <p><span>John Doe</span>Senior Marketing Manager <br> phone: +000 123 000 77 88 <br> Email: contact@example.com</p>
+            </div>
+        </div>
+     </section>
+
  */
 
 
@@ -363,4 +509,19 @@ var ftrdiv3=document.createElement("div");
         ftrimg2.setAttribute("src","img/pay/pay.png"); 
         document.querySelector(".install").append(ftrimg2); 
 
+// Script for navigation bar
+const bar=document.getElementById('bar');
+const close=document.getElementById('close');
+const nav=document.getElementById('navbar');
 
+if(bar){
+    bar.addEventListener('click',()=>{
+        nav.classList.add('active');
+    })
+}
+
+if(close){
+    close.addEventListener('click',()=>{
+        nav.classList.remove('active');
+    })
+}

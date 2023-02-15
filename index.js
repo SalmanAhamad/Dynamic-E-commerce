@@ -103,8 +103,8 @@ var icon1=document.createElement("i");
      document.querySelector(".mobile-icon").append(icon1);
 
 var icon1=document.createElement("i");
+    icon1.setAttribute("id","bar"); 
     icon1.setAttribute("class","fas fa-outdent");
-    icon1.setAttribute("id","bar");
      document.querySelector("#mobile").append(icon1);
 
 /* section header  end */
@@ -1330,11 +1330,19 @@ var ftrdiv3=document.createElement("div");
     var ftrimg2=document.createElement("img");
         ftrimg2.setAttribute("src","img/pay/pay.png"); 
         document.querySelector(".install").append(ftrimg2); 
+// Script for navigation bar
+const bar=document.getElementById('bar');
+const close=document.getElementById('close');
+const nav=document.getElementById('navbar');
 
-      /*<footer class="section-p1">
-            <div class="col install">
-                <p>Secured Payment Gateways</p>
-                <img src="img/pay/pay.png" alt="">
-            </div>
-        </footer> */
+if(bar){
+    bar.addEventListener('click',()=>{
+        nav.classList.add('active');
+    })
+}
 
+if(close){
+    close.addEventListener('click',()=>{
+        nav.classList.remove('active');
+    })
+}

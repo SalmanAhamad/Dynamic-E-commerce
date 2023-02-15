@@ -138,6 +138,7 @@ document.querySelector(".parentproduct").append(pdtdiv1);
 /*one*/
 var pdtdiv2=document.createElement("div");
 pdtdiv2.setAttribute("class", "pro");
+pdtdiv2.setAttribute("onclick","window.location.href='sproduct.html'");
 document.querySelector(".pro-container").append(pdtdiv2);
 
 var pdtimg1=document.createElement("img");
@@ -1104,3 +1105,19 @@ var ftrdiv3=document.createElement("div");
         ftrimg2.setAttribute("src","img/pay/pay.png"); 
         document.querySelector(".install").append(ftrimg2); 
 
+// Script for navigation bar
+const bar=document.getElementById('bar');
+const close=document.getElementById('close');
+const nav=document.getElementById('navbar');
+
+if(bar){
+    bar.addEventListener('click',()=>{
+        nav.classList.add('active');
+    })
+}
+
+if(close){
+    close.addEventListener('click',()=>{
+        nav.classList.remove('active');
+    })
+}
